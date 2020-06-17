@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Daily Digest</title>
+  <meta name="description" content="News Aggregator">
+  <meta name="author" content="Sathya">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+
+</head>
+
+<body>
+  <h1>Daily Digest</h1>
+  <nav>
+    <ul>
+      <li class='journal active' id='wsj' onclick="getArticles(this.id)">Wall Street Journal</li>
+      <li class='journal' id='hbr' onclick="getArticles(this.id)">Harvard Business Review</li>
+      <li class='journal' id='mit' onclick="getArticles(this.id)">MIT Tech Review</li>
+      <li class='journal' id='econ' onclick="getArticles(this.id)">The Economist</li>
+      <li class='journal' id='mck' onclick="getArticles(this.id)">Mckinsey Quarterly</li>
+    </ul>
+  </nav>
+  <div id="articles"></div>
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
