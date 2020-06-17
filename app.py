@@ -20,7 +20,7 @@ def getArticles(journal):
             toReturn.append(entry.link['href'])
     else:
         page = urllib.request.urlopen(url)
-        soup = BeautifulSoup(page, "xml")
+        soup = BeautifulSoup(page, "lxml")
         for item in soup.find_all('item'):
             toReturn.append(item.link.text)
     return jsonify(toReturn);
