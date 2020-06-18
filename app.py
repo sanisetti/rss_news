@@ -28,7 +28,7 @@ def getArticles(journal):
         page = urllib.request.urlopen(url)
         data = json.loads(page.read())['items']
         for obj in data:
-            toReturn.append(obj['url']))
+            toReturn.append(obj['url'])
     else:
         page = urllib.request.urlopen(url)
         soup = BeautifulSoup(page, features="xml")
