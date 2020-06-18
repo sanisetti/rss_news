@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Daily Digest</title>
+  <meta name="description" content="News Aggregator">
+  <meta name="author" content="Sathya">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+
+</head>
+
+<body>
+  <h1>Daily Digest</h1>
+  <nav>
+    <ul>
+      <li class='journal' id='lat' onclick="getArticles(this.id)">Los Angeles Times</li>
+      <li class='journal' id='nyt' onclick="getArticles(this.id)">New York Times</li>
+      <li class='journal' id='npr' onclick="getArticles(this.id)">NPR</li>
+      <li class='journal' id='buzz' onclick="getArticles(this.id)">Buzzfeed</li>
+      <!-- <li class='journal' id='mck' onclick="getArticles(this.id)">Mckinsey Quarterly</li> -->
+      <li class='journal' id='cos' onclick="getArticles(this.id)">Cosmopolitan</li>
+    </ul>
+  </nav>
+  <div id="articles"></div>
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
