@@ -100,7 +100,7 @@ li {
 @media only screen and (max-width: 425px) {
   .embedly-card {
 		display: block;
-		max-width: 75%;
+		max-width: 100%;
   }
 	#articles {
 		max-width: 90%;
