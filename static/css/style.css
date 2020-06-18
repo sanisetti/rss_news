@@ -79,7 +79,7 @@ nav {
 .embedly-card {
   display: inline-block;
   max-width: 30%;
-	min-width: 200px;
+	min-width: 400px;
   padding-left: 1%;
   padding-right: 1%;
   height: 500px;
