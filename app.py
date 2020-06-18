@@ -7,7 +7,8 @@ journalRSSMap = {'wsj': 'https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml',
                  'hbr': 'http://feeds.hbr.org/harvardbusiness',
                  'mit': 'https://www.technologyreview.com/feed/',
                  'econ': 'https://www.economist.com/finance-and-economics/rss.xml',
-                 'mck': 'https://www.mckinsey.com/insights/rss.aspx'}
+                 'mck': 'https://www.mckinsey.com/insights/rss.aspx',
+                 'nyt': 'https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml'}
 
 @app.route('/news/<journal>')
 def getArticles(journal):

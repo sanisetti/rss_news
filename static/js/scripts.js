@@ -1,4 +1,4 @@
-var active = 'wsj'
+var active = 'nyt'
 
 function getArticles(id) {
   $.get( "news/" + id, function( data ) {
@@ -17,5 +17,5 @@ function getArticles(id) {
 
 
 $(function() {
-  getArticles('wsj');
+  getArticles('nyt');
 });
