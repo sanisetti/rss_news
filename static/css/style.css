@@ -44,7 +44,7 @@ table {
 
 h1 {
   text-align: center;
-  font-size: 32px;
+  font-size: 65px;
   font-weight: bold;
   padding: 20px;
 }
@@ -78,9 +78,13 @@ nav {
 
 .embedly-card {
   display: inline-block;
-  max-width: 33%;
+  max-width: 30%;
 	min-width: 200px;
   padding-left: 25px;
   padding-right: 25px;
   height: 500px;
+}
+
+li {
+	font-size:
 }
