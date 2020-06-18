@@ -99,6 +99,6 @@ li {
 
 @media only screen and (max-width: 425px) {
   .embedly-card {
-		width: 95%;
+		display: block;
   }
 }
