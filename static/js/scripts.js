@@ -4,7 +4,7 @@ function getArticles(id) {
   $.get( "news/" + id, function( data ) {
     $('#articles').empty()
     toAdd = '<ul>';
-    for (var i = 0; i < Math.min(data.length, 20); i++) {
+    for (var i = 0; i < Math.min(data.length, 12); i++) {
       toAdd += '<a href="' + data[i] +'" class="embedly-card"></a>'
     }
     toAdd += '</ul>';
