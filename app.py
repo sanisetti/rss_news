@@ -21,6 +21,7 @@ journalRSSMap = {'wsj': 'https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml',
 @app.route('/news/<journal>')
 def getArticles(journal):
     url = journalRSSMap[journal]
+    print(url)
     toReturn = []
     if journal == 'hbr':
         page = urllib.request.urlopen(url)
