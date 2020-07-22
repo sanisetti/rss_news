@@ -35,7 +35,7 @@ def getArticles(journal):
         data = json.loads(page.read())['items']
         for obj in data:
             toReturn.append(obj['url'])
-    elif joirnal == 'scd':
+    elif journal == 'scd':
         req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         page = urlopen(req).read()
         soup = BeautifulSoup(page, features="xml")
