@@ -13,7 +13,10 @@ journalRSSMap = {'wsj': 'https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml',
                  'lat': 'https://www.latimes.com/news/rss2.0.xml',
                  'buzz': 'https://www.buzzfeed.com/index.xml',
                  'cos': 'https://www.cosmopolitan.com/rss/all.xml/',
-                 'npr': 'https://feeds.npr.org/1019/feed.json'}
+                 'npr': 'https://feeds.npr.org/1019/feed.json',
+                 'scd': 'https://www.sciencedaily.com/rss/all.xml',
+                 'lsd': 'https://www.livescience.com/feeds/all',
+                 'pnas': 'https://feeds.feedburner.com/ProceedingsOfTheNationalAcademyOfSciencesMedicalSciences'}
 
 @app.route('/news/<journal>')
 def getArticles(journal):
@@ -39,6 +42,10 @@ def getArticles(journal):
 @app.route('/isa')
 def isa():
     return render_template('isa.html')
+
+@app.route('/shravya')
+def shravya():
+    return render_template('shravya.html')
 
 @app.route('/')
 def home():
