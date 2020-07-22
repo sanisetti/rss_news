@@ -5,9 +5,6 @@ import json
 
 from urllib.request import Request, urlopen
 
-
-webpage = urlopen(req).read()
-
 app = Flask(__name__)
 journalRSSMap = {'wsj': 'https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml',
                  'hbr': 'http://feeds.hbr.org/harvardbusiness',
@@ -39,7 +36,7 @@ def getArticles(journal):
         for obj in data:
             toReturn.append(obj['url'])
     elif joirnal == 'scd':
-        req = Request('https://www.sciencedaily.com/rss/all.xml', headers={'User-Agent': 'Mozilla/5.0'})
+        req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         page = urlopen(req).read()
         soup = BeautifulSoup(page, features="xml")
         for item in soup.find_all('item'):
