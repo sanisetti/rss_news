@@ -18,7 +18,8 @@ journalRSSMap = {'wsj': 'https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml',
                  'npr': 'https://feeds.npr.org/1019/feed.json',
                  'scd': 'https://www.sciencedaily.com/rss/all.xml',
                  'lsd': 'https://www.livescience.com/feeds/all',
-                 'pnas': 'https://feeds.feedburner.com/ProceedingsOfTheNationalAcademyOfSciencesMedicalSciences'}
+                 'pnas': 'https://feeds.feedburner.com/ProceedingsOfTheNationalAcademyOfSciencesMedicalSciences',
+                 'ft': 'https://www.ft.com/?format=rss'}
 
 @app.route('/news/<journal>')
 def getArticles(journal):
